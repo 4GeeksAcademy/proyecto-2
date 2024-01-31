@@ -4,41 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Amanufacturing%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4024">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="header">
-  <nav class="navbar bg-body-tertiary">
-      <a class="navbar-brand" href="#">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/008/385/736/small/instagram-social-media-icon-symbol-element-illustration-free-vector.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-       Instagram
-       <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button class="btn btn-success me-md-2" type="button">create a new post</button>
+  <div class="container-sm">
+    <nav class="navbar bg-body-tertiary">
+        <a class="navbar-brand" href="#">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/008/385/736/small/instagram-social-media-icon-symbol-element-illustration-free-vector.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+         <strong>Instagram</strong>
 
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="https://tse1.mm.bing.net/th?id=OIP.dcLm1V7ggCLJCEfbhQ5G9gAAAA&pid=Api&P=0&h=180" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-  </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</div>
-       <div class="button">
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-       </div>
-       </div>
-      </a>
+<!-- Button trigger modal -->
+<div class="nav justify-content-md-end">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  create a new post
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+       <div class="modal-body">
+       caption:
+        <div>
+         <button type="button" class="btn btn-outline-secondary">Add the caption of the your post here</button></div>
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+         <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4z"/>
+         <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+         </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+          </svg>
+        </div>
+      
+           <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">publish</button>
+        </div>
+        
     </div>
-  </nav>
-       <img src="https://tse3.mm.bing.net/th?id=OIP.XZEJToeO1FfWIQHW0WltBQHaE5&pid=Api&P=0&h=180" class="rounded float-start" alt="img"width="250" height="250" class="d-inline-block align-text-top">
-       <img src="https://tse2.mm.bing.net/th?id=OIP.lxSMcD2lY4G9Hvn78KYWRgHaE2&pid=Api&P=0&h=180" class="text-center" alt="img"width="250" height="250" class="d-inline-block align-text-top">
-       <img src="https://tse3.explicit.bing.net/th?id=OIP.5fuaUtHzVO70djNCNGp3wAHaEK&pid=Api&P=0&h=180" class="rounded float-end" alt="img"width="250" height="250" class="d-inline-block align-text-top">
-      </div>  
+  </div>
+</div>
+         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+         </a>
+         <ul class="nav nav-pills">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+              <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+            </svg></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">privacy and data</a></li>
+            </ul>
+          </li>
+        </ul>
+        </nav>
+        <div class=></div>
+        <div class="md-flex justify-center-md-end">
+        </div>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+              <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5zM1.5 1a.5.5 0 0 0-.5.5V5h4V1zM5 6H1v4h4zm1 4h4V6H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5zm1 0v4h4v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11zm0-1h4V6h-4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11zm-1 0V1H6v4z"/>
+            </svg></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+              <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0"/>
+            </svg></button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0"> <div class="row row-cols-3 row-cols-lg-3 g-2 g-lg-3">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.XZEJToeO1FfWIQHW0WltBQHaE5&pid=Api&P=0&h=180" class="rounded float-start" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.lxSMcD2lY4G9Hvn78KYWRgHaE2&pid=Api&P=0&h=180" class="text-center" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse3.explicit.bing.net/th?id=OIP.5fuaUtHzVO70djNCNGp3wAHaEK&pid=Api&P=0&h=180" class="rounded float-end" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.JmuKkxrg8cLTTKQmH8EYUAHaFj&pid=Api&P=0&h=180" class="rounded float-start" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.kkrxpazq9tbtxSeeuipdMgHaEo&pid=Api&P=0&h=180" class="text-center" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.lqfJNJsiz6AHD-Zlc1bSUgHaEK&pid=Api&P=0&h=180" class="rounded float-end" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.s0w6Sesefqt2Ltk1VAZEDgHaE0&pid=Api&P=0&h=180" class="rounded float-start" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.-iIFBK2aZm1MaPif0ZERJQHaHa&pid=Api&P=0&h=180" class="text-center" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.dXU3z2RwQ--1iwgKAp__uAHaFj&pid=Api&P=0&h=180" class="rounded float-end" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+          </div></div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><img src="https://tse3.mm.bing.net/th?id=OIP.XZEJToeO1FfWIQHW0WltBQHaE5&pid=Api&P=0&h=180" class="rounded float-start" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.lxSMcD2lY4G9Hvn78KYWRgHaE2&pid=Api&P=0&h=180" class="text-center" alt="img"width="420" height="420" class="d-inline-block align-text-top">
+            <img src="https://tse3.explicit.bing.net/th?id=OIP.5fuaUtHzVO70djNCNGp3wAHaEK&pid=Api&P=0&h=180" class="rounded float-end" alt="img"width="420" height="420" class="d-inline-block align-text-top"></div>
+        </div>
+
+        </div>
+
 </body>
 </html>
